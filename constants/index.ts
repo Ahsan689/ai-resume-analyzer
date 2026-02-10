@@ -4,7 +4,7 @@ export const resumes: Resume[] = [
         companyName: "Google",
         jobTitle: "Frontend Developer",
         imagePath: "/images/resume-1.png",
-        resumePath: "/resumes/resume-1.pdf",
+        resumePath: "/images/resume_01.png",
         feedback: {
             overallScore: 85,
             ATS: {
@@ -34,7 +34,7 @@ export const resumes: Resume[] = [
         companyName: "Microsoft",
         jobTitle: "Cloud Engineer",
         imagePath: "/images/resume-2.png",
-        resumePath: "/resumes/resume-2.pdf",
+        resumePath: "/images/resume_02.png",
         feedback: {
             overallScore: 55,
             ATS: {
@@ -64,7 +64,7 @@ export const resumes: Resume[] = [
         companyName: "Apple",
         jobTitle: "iOS Developer",
         imagePath: "/images/resume-3.png",
-        resumePath: "/resumes/resume-3.pdf",
+        resumePath: "/images/resume_03.png",
         feedback: {
             overallScore: 75,
             ATS: {
