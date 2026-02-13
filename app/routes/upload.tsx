@@ -1,5 +1,6 @@
 import React, {type FormEvent, type SubmitEventHandler, useState} from 'react'
 import Navbar from "~/Components/Navbar";
+import FileUploader from "~/Components/FileUploader";
 
 
 const Upload = () => {
@@ -15,7 +16,8 @@ const Upload = () => {
     return (
         <main className="bg-[url('/images/bg-main.svg')] bg-cover">
             <Navbar/>
-            <section className="main-section"> </section>
+            <section className="main-section">
+
             <div className={'page-heading py-16'}>
                 <h1>Smart feedback for your dream job</h1>
                 {isProcessing ? (
@@ -43,7 +45,7 @@ const Upload = () => {
                         </div>
                         <div className={'form-div'}>
                             <label htmlFor={'uploader'}>Uplaod Resume </label>
-                            <div>Uploader</div>
+                            <FileUploader/>
                         </div>
 
                         <button className={'primary-button'} type={'submit'}>
@@ -53,7 +55,7 @@ const Upload = () => {
                 )
                 }
             </div>
-
+            </section>
         </main>
     )
 }
