@@ -1,12 +1,12 @@
 import React, {useCallback, useState} from 'react'
 import {useDropzone} from 'react-dropzone'
+import { formatSize } from '../lib/utils'
 
 
 interface FileUploaderProps {
     onFileSelect? : (file: File | null) => void
 }
 
-const [file, setFile] = useState();
 
 const FileUploader = ({onFileSelect}: FileUploaderProps) => {
 
@@ -37,8 +37,11 @@ const FileUploader = ({onFileSelect}: FileUploaderProps) => {
                 <img src='/icons/info.svg' alt='uplaod' className='size-20' />
             </div>
             {file ? (
-                <div>
-
+                <div className='flex items-center space-x-4 p-4 bg-gray-50 rounded-lg'>
+                    <div className='flex-1'>
+                        <p className='text-sm font-medium text-gray-900 truncate'>{file.name}</p>
+                        <p className='text-xs text-gray-500'>{formatSize(file.size)}</p>
+                    </div>
                 </div>
             ):(
                 <div>
